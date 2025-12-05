@@ -6,12 +6,18 @@ import './App.css';
 import BasicLayout from './layouts/BasicLayout';
 import DataOverviewPage from './pages/DataOverview/DataOverviewPage';
 import ConditionSearchPage from './pages/SmartSearch/ConditionSearchPage';
+import SimpleSearchPage from './pages/SmartSearch/SimpleSearchPage';
+import InspirationDiscoveryPage from './pages/InspirationDiscovery/InspirationDiscoveryPage';
+import DataDictionaryPage from './pages/DataDictionary/DataDictionaryPage';
 
 // 模拟所有页面的映射
 const RouteMap: { [key: string]: React.FC } = {
   '/overview': DataOverviewPage,
+  '/search/simple': SimpleSearchPage,
   '/search/condition': ConditionSearchPage,
-  // 其它页面（如数据字典、导出审批）可以在这里添加
+  '/inspiration': InspirationDiscoveryPage,
+  '/dictionary': DataDictionaryPage,
+  // 其它页面（如导出审批）可以在这里添加
 };
 
 const App: React.FC = () => {
